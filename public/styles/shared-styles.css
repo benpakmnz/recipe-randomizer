@@ -1,0 +1,29 @@
+.recipe-form {
+  margin: auto;
+}
+.recipe-form .submit-btn-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.recipe-form .submit-btn-wrapper .MuiButtonBase-root {
+  height: 100%;
+  display: flex;
+  border-radius: 50%;
+  flex-direction: column;
+}
+.recipe-form .submit-btn-wrapper .MuiButtonBase-root::before {
+  content: "";
+  display: block;
+  border: 1px solid white;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  border-radius: 50%;
+}
+.recipe-form .submit-btn-wrapper .MuiButtonBase-root img {
+  height: 50%;
+  display: block;
+}
+
+/*# sourceMappingURL=shared-styles.css.map */

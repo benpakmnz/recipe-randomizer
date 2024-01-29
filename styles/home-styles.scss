@@ -1,0 +1,52 @@
+.recipe-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .MuiCardMedia-root {
+    padding-top: 44.25%;
+    height: 35px;
+  }
+
+  .MuiCardContent-root {
+    flex-grow: 1;
+  }
+}
+
+.recipe-form {
+  width: 420px;
+  .submit-btn-wrapper {
+    height: 220px;
+
+    .MuiButtonBase-root {
+      width: 220px;
+      box-shadow: 0px 0px 20px 0px #393939;
+    }
+  }
+}
+
+.background {
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  animation: backgroundImageAnimation 20s infinite;
+  transition: background-image 0.1s linear;
+  overflow: hidden;
+}
+
+@keyframes backgroundImageAnimation {
+  0%,
+  100% {
+    background-image: url("/images/background-1.jpg");
+  }
+  33% {
+    background-image: url("/images/background-2.jpg");
+  }
+  66% {
+    background-image: url("/images/background-3.jpg");
+  }
+}

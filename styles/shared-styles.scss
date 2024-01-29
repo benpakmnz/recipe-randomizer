@@ -1,0 +1,30 @@
+.recipe-form {
+  margin: auto;
+  .submit-btn-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .MuiButtonBase-root {
+      height: 100%;
+      display: flex;
+      border-radius: 50%;
+      flex-direction: column;
+
+      &::before {
+        content: "";
+        display: block;
+        border: 1px solid white;
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      img {
+        height: 50%;
+        display: block;
+      }
+    }
+  }
+}
