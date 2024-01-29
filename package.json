@@ -2,12 +2,14 @@
   "name": "recipe-randomizer",
   "version": "5.0.0",
   "private": true,
+  "homepage": "https://benpakmnz.github.io/recipe-randomizer",
   "scripts": {
     "build:css": "sass styles/:public/styles/",
     "build": "npm run build:css && remix build",
     "sass:dev": "sass --watch styles/:public/styles/",
     "dev": "concurrently \"npm run sass:dev\" \"remix dev\"",
     "start": "remix-serve ./build/index.js",
+    "deploy": "gh-pages -d build",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -30,6 +32,7 @@
     "@remix-run/dev": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "gh-pages": "^6.1.1",
     "typescript": "latest"
   },
   "engines": {
